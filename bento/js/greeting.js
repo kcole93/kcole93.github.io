@@ -1,5 +1,5 @@
 // Get the hour
-// var today = new Date();
+var today = new Date();
 var hour = today.getHours();
 
 // Here you can change your name
