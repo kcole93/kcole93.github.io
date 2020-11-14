@@ -25,7 +25,7 @@ if (lightTheme === 'enabled') {
 }
 
 themeToggle.addEventListener('click', () => {
-    darkTheme = localStorage.getItem('lightTheme');
+    lightTheme = localStorage.getItem('lightTheme');
     if (lightTheme !== 'enabled') {
         enableLight();
     } else {
