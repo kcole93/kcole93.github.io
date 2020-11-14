@@ -1,38 +1,37 @@
 // Store the theme
-let darkTheme = localStorage.getItem('darkTheme');
+let lightTheme = localStorage.getItem('lightTheme');
 const themeToggle = document.querySelector('#themeButton');
 
-localStorage.setItem('darkTheme', 'enabled');
 
-const enableDark = () => {
-    document.body.classList.add('darktheme');
-    localStorage.setItem('darkTheme', 'enabled');
-    themeToggle.innerHTML = `<i id="bicon" data-feather="moon"></i>`;
-    feather.replace();
-};
-
-const disableDark = () => {
-    document.body.classList.remove('darktheme');
-    localStorage.setItem('darkTheme', null);
+const enableLight = () => {
+    document.body.classList.add('lighttheme');
+    localStorage.setItem('lightTheme', 'enabled');
     themeToggle.innerHTML = `<i id="bicon" data-feather="sun"></i>`;
     feather.replace();
 };
 
-if (darkTheme === 'enabled') {
-    enableDark();
+
+const disableLight = () => {
+    document.body.classList.remove('lighttheme');
+    localStorage.setItem('lightTheme', null);
+    themeToggle.innerHTML = `<i id="bicon" data-feather="moon"></i>`;
+    feather.replace();
+};
+
+if (lightTheme === 'enabled') {
+    enableLight();
 } else {
-    disableDark();
+    disableLight();
 }
 
 themeToggle.addEventListener('click', () => {
-    darkTheme = localStorage.getItem('darkTheme');
-    if (darkTheme !== 'enabled') {
-        enableDark();
+    darkTheme = localStorage.getItem('lightTheme');
+    if (lightTheme !== 'enabled') {
+        enableLight();
     } else {
-        disableDark();
+        disableLight();
     }
 });
-
 // Change the theme with the time
 
  // const today = new Date();
