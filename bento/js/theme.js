@@ -6,7 +6,7 @@ const themeToggle = document.querySelector('#themeButton');
 const enableLight = () => {
     document.body.classList.add('lighttheme');
     localStorage.setItem('lightTheme', 'enabled');
-    themeToggle.innerHTML = `<i id="bicon" data-feather="sun"></i>`;
+    themeToggle.innerHTML = `<i id="bicon" data-feather="moon"></i>`;
     feather.replace();
 };
 
@@ -14,7 +14,7 @@ const enableLight = () => {
 const disableLight = () => {
     document.body.classList.remove('lighttheme');
     localStorage.setItem('lightTheme', null);
-    themeToggle.innerHTML = `<i id="bicon" data-feather="moon"></i>`;
+    themeToggle.innerHTML = `<i id="bicon" data-feather="sun"></i>`;
     feather.replace();
 };
 
