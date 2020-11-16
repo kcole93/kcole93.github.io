@@ -7,13 +7,13 @@ date: 2020-11-16
 # Performing OCR on Images and/or PDFs
 
 ## Combine Images and Convert to PDF
-```
+```bash
 combine image-01.png image-02.png output.pdf
 ```
 Uses Imagemagick.
 
 ## OCR a PDF File
-```
+```bash
 ocrmypdf -l eng+ben input.pdf output.pdf
 ```
 `-l`: Language flag, multiple may be set.

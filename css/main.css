@@ -25,6 +25,16 @@ h1 {
     font-size: 3em;
     color: #d8dee9;
 }
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    color: #d8dee9;
+}
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    color: #d8dee9;
+}
 p {
     font-family: 'Roboto', sans-serif;
     font-size: 0.875em;
@@ -54,7 +64,7 @@ ul.posts li {
 }
 
 /* Code Syntax Highlighting */
-.highlight { background-color: #dadad4; width: 60%; } /* Snippet Box Background and Width */
+.highlight { background-color: #586E75; width: 60%; } /* Snippet Box Background and Width */
 .highlight .hll { background-color: #ffc; }
 .highlight .c { color: #888; font-weight: bold; } /* Comment */
 .highlight .err { color: #a00; background-color: #fff } /* Error */
