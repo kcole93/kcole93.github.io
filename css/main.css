@@ -1,6 +1,7 @@
 body {
     margin: 60px auto;
     width: 60%;
+    background-color: #1D252C;
 }
 nav ul, footer ul {
     font-family: 'Roboto', sans-serif;
@@ -14,7 +15,7 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    color: #999;
+    color: #8FBCBB;
 }
 a:hover {
     text-decoration: underline;
@@ -27,7 +28,7 @@ p {
     font-family: 'Roboto', sans-serif;
     font-size: 0.875em;
     line-height: 1.4em;
-    color: #333;
+    color:#d8dee9;
 }
 ul {
     font-family: 'Roboto', sans-serif;
@@ -35,7 +36,7 @@ ul {
     line-height: 1.4em;
 }    
 footer {
-    border-top: 1px solid #d5d5d5;
+    border-top: 1px solid #3B4252;
     font-size: .8em;
 }
 
