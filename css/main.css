@@ -64,7 +64,7 @@ ul.posts li {
 }
 
 /* Code Syntax Highlighting */
-.highlight { background-color: #586E75; width: 60%; } /* Snippet Box Background and Width */
+.highlight { background-color:#d8dee9; width: 60%; padding-left: .5rem;} /* Snippet Box Background and Width */
 .highlight .hll { background-color: #ffc; }
 .highlight .c { color: #888; font-weight: bold; } /* Comment */
 .highlight .err { color: #a00; background-color: #fff } /* Error */
