@@ -21,10 +21,23 @@ setPosition();
 function setPosition(position) {
     // Here you can change your position
     // You can use https://www.latlong.net/ to get it! (I use San Francisco as an example)
-    let latitude = 40.690010;
-    let longitude = -73.967637;
-
-    getWeather(latitude, longitude);
+    if (navigator.geolocation) {
+        var location_timeout = setTimeout("geolocFail()", 10000);
+    
+        navigator.geolocation.getCurrentPosition(function(position) {
+            clearTimeout(location_timeout);
+    
+            var lat = position.coords.latitude;
+            var lng = position.coords.longitude;
+    
+            getWeather(lat, lng);
+        }, function(error) {
+            clearTimeout(location_timeout);
+            geolocFail();
+        });
+     } else { 
+            getWeather(40.68940369948033, -73.94663000395383); // Default to Brooklyn
+        }   
 }
 
 // Get the Weather data
